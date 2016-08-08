@@ -1,6 +1,6 @@
-@import '../libs/vars';
-@import '../libs/functions';
-@import '../libs/mixins';
+@import 'vars';
+@import 'functions';
+@import 'mixins';
 
 ///
 /// Lens by HTML5 UP
@@ -67,7 +67,7 @@
 				top: 0;
 				width: 4em;
 				height: 4em;
-				background-image: url('images/close.svg');
+				background-image: url('close.svg');
 				background-repeat: no-repeat;
 				background-size: 64px 64px;
 				cursor: pointer;
@@ -91,7 +91,7 @@
 				width: 6em;
 				height: 6em;
 				margin-top: -3em;
-				background-image: url('images/arrow.svg');
+				background-image: url('arrow.svg');
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -157,7 +157,7 @@
 				left: 50%;
 				width: 3em;
 				height: 3em;
-				background-image: url('images/spinner.svg');
+				background-image: url('spinner.svg');
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -183,7 +183,7 @@
 
 			.inner {
 				.toggle {
-					background-image: url('images/open.svg');
+					background-image: url('open.svg');
 				}
 			}
 		}
@@ -208,7 +208,7 @@
 			.inner {
 				.toggle {
 					@include vendor('transition', 'opacity #{_duration(layout)} ease');
-					background-image: url('images/open.svg');
+					background-image: url('open.svg');
 					opacity: 0;
 
 					@if _misc(main-side) == 'left' {
@@ -237,7 +237,7 @@
 
 				.nav-next,
 				.nav-previous {
-					background-image: url('images/arrow-small.svg');
+					background-image: url('arrow-small.svg');
 					background-size: 32px 32px;
 				}
 			}
@@ -245,7 +245,7 @@
 			body.fullscreen & {
 				.inner {
 					.toggle {
-						background-image: url('images/open-small.svg');
+						background-image: url('open-small.svg');
 					}
 				}
 			}
@@ -258,7 +258,7 @@
 
 			.inner {
 				.toggle {
-					background-image: url('images/close-small.svg') !important;
+					background-image: url('close-small.svg') !important;
 					background-size: 32px 32px;
 				}
 			}
